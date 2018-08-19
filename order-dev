@@ -6,10 +6,11 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://127.0.0.1:3306/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
+  cloud:
+    config:
+      label: release
+      profile: dev
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-env: dev
-label: release
-
